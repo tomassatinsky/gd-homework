@@ -1,5 +1,10 @@
 @import "../theme.scss";
 
+.Border {
+    border: 1px solid $color-border;
+    border-radius: $border-radius;
+}
+
 .Vertical {
     flex: 1;
     display: flex;
@@ -7,20 +12,18 @@
 }
 
 .CustomComponent {
+    @extend .Border;
     width: 300px;
     padding: $spacing;
-    border: 1px solid $color-border;
-    border-radius: $border-radius;
     display: flex;
     flex-direction: column;
 }
 
 .Selector {
+    @extend .Border;
     margin-top: auto;
     font-size: $font-size-h5;
     padding: $spacing/4;
-    border: 1px solid $color-border;
-    border-radius: $border-radius;
 }
 
 .Loading {
