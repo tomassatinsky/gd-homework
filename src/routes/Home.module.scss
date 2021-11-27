@@ -6,11 +6,6 @@
     width: 100%;
 }
 
-.Loading {
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
 .Filter {
     flex: 1;
     border: 1px solid $color-border;
@@ -24,6 +19,7 @@
     display: flex;
     flex-direction: row;
     gap: $spacing / 2;
+    min-height: 500px;
 }
 
 .LineChart {
@@ -31,28 +27,4 @@
     padding: $spacing;
     border: 1px solid $color-border;
     border-radius: $border-radius;
-}
-
-.CustomComponent {
-    width: 300px;
-    padding: $spacing;
-    border: 1px solid $color-border;
-    border-radius: $border-radius;
-    display: flex;
-    flex-direction: column;
-    min-height: 300px;
-}
-
-.Selector {
-    margin-top: auto;
-    font-size: $font-size-h5;
-    padding: $spacing/4;
-    border: 1px solid $color-border;
-    border-radius: $border-radius;
-}
-
-.Vertical {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
 }
